@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npx vite *)",
+      "Bash(node -e \"const l = require\\('./node_modules/lucide-react'\\); console.log\\('Figma:', !!l.Figma, 'Images:', !!l.Images\\);\")"
+    ]
+  }
+}
