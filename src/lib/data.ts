@@ -154,7 +154,7 @@ export const projects: Project[] = [
     title: 'AfghanFlavor',
     description: 'Full-featured food delivery platform with real-time order tracking via Google Maps. Implements separate customer, rider, and restaurant-facing flows using Firebase and MVC architecture. Customers browse restaurants, place orders, and track delivery live; riders receive optimised routes; restaurants manage menus and incoming orders.',
     tech: ['Flutter', 'Firebase', 'Google Maps', 'MVC', 'Real-Time Tracking'],
-    period: 'Mar 2022 - Sep 2024',
+    period: 'Mar 2023 - Sep 2024',
     company: 'Nextera Softwares',
     image: '/images/projects/afghflavor/unnamed.webp',
     images: [
@@ -176,7 +176,7 @@ export const projects: Project[] = [
     title: 'Durshalta',
     description: 'Multi-vendor food and service delivery app published on both iOS and Android. Built with Firebase, MVC, and Google Maps for live location sharing between customers and riders. Features dual customer/rider interfaces, real-time order management, push notifications, and photo-based delivery verification.',
     tech: ['Flutter', 'Firebase', 'Google Maps', 'MVC', 'iOS & Android'],
-    period: 'Mar 2022 - Sep 2024',
+    period: 'Mar 2023 - Sep 2024',
     company: 'Nextera Softwares',
     image: '/images/projects/durshalta/300x650bb.webp',
     images: [
@@ -364,7 +364,7 @@ export const experiences: Experience[] = [
     role: 'Flutter Developer',
     company: 'Nextera Software Company',
     location: 'Peshawar',
-    period: 'Mar 2022 - Sep 2025',
+    period: 'Feb 2023 - Sep 2025',
     type: 'Full-time',
     responsibilities: [
       'Delivered cross-platform Flutter applications across food delivery, education, utility, and management domains.',
@@ -409,7 +409,7 @@ export const certifications: Certification[] = [
     id: 'flutter',
     name: 'Google Flutter Development Certification',
     provider: 'Google',
-    year: '2022',
+    year: '2023',
   },
   {
     id: 'python',
