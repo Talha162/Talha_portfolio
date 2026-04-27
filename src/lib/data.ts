@@ -107,7 +107,7 @@ export const projects: Project[] = [
     description: 'Monthly savings committee management system with fully separated admin and member workflows. Admins create committees, assign payout orders, and track payments via Stripe and Firebase Cloud Functions. Members receive real-time push notifications for payment reminders and payout confirmations.',
     tech: ['Flutter', 'Firebase', 'Stripe', 'Cloud Functions', 'Push Notifications'],
     period: 'Jun 2024 - Jul 2025',
-    company: 'Nextera Softwares',
+    company: 'Nexum Technologies',
     image: '/images/projects/committee/home.png',
     images: [
       '/images/projects/committee/splash.png',
@@ -155,7 +155,7 @@ export const projects: Project[] = [
     description: 'Full-featured food delivery platform with real-time order tracking via Google Maps. Implements separate customer, rider, and restaurant-facing flows using Firebase and MVC architecture. Customers browse restaurants, place orders, and track delivery live; riders receive optimised routes; restaurants manage menus and incoming orders.',
     tech: ['Flutter', 'Firebase', 'Google Maps', 'MVC', 'Real-Time Tracking'],
     period: 'Mar 2023 - Sep 2024',
-    company: 'Nextera Softwares',
+    company: 'Nexum Technologies',
     image: '/images/projects/afghflavor/unnamed.webp',
     images: [
       '/images/projects/afghflavor/unnamed.webp',
@@ -177,7 +177,7 @@ export const projects: Project[] = [
     description: 'Multi-vendor food and service delivery app published on both iOS and Android. Built with Firebase, MVC, and Google Maps for live location sharing between customers and riders. Features dual customer/rider interfaces, real-time order management, push notifications, and photo-based delivery verification.',
     tech: ['Flutter', 'Firebase', 'Google Maps', 'MVC', 'iOS & Android'],
     period: 'Mar 2023 - Sep 2024',
-    company: 'Nextera Softwares',
+    company: 'Nexum Technologies',
     image: '/images/projects/durshalta/300x650bb.webp',
     images: [
       '/images/projects/durshalta/300x650bb.webp',
@@ -196,7 +196,7 @@ export const projects: Project[] = [
     description: 'Structured language learning app with lesson-based content, video lessons, and interactive quizzes. Integrates REST APIs for dynamic content delivery and tracks learner progress. Clean, intuitive UI designed to keep learners engaged through a progressive curriculum.',
     tech: ['Flutter', 'REST APIs', 'Video Lessons', 'Quiz Engine'],
     period: 'May 2025 - Jul 2025',
-    company: 'Nextera Softwares',
+    company: 'Nexum Technologies',
     image: '/images/project-amz.jpg',
     figmaUrl: 'https://www.figma.com/design/6ty8ERmhAsDaYz2ir4tpRB/AMZ-App?node-id=0-1&p=f&t=e3kK9rDaB5fMPryL-0',
   },
@@ -362,7 +362,7 @@ export const experiences: Experience[] = [
   {
     id: 'nextera',
     role: 'Flutter Developer',
-    company: 'Nextera Software Company',
+    company: 'Nexum Technologies',
     location: 'Peshawar',
     period: 'Feb 2023 - Sep 2025',
     type: 'Full-time',
