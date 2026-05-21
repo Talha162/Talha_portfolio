@@ -13,7 +13,7 @@ export const personalInfo = {
 
 export const stats: Stat[] = [
   { value: '3', label: 'Years Experience', suffix: '+' },
-  { value: '23', label: 'Projects Completed', suffix: '+' },
+  { value: '22', label: 'Projects Completed', suffix: '+' },
   { value: '8', label: 'Apps Published', suffix: '+' },
   { value: '2', label: 'Companies Worked', suffix: '' },
 ];
@@ -210,7 +210,7 @@ export const projects: Project[] = [
     description: 'AI-powered social media content creation and scheduling SaaS that coordinates multi-platform posts from a single content calendar. Includes OTP-based auth, post analytics, and a 15-screen MVP scope built with Riverpod and GoRouter on a Feature-First architecture.',
     tech: ['Flutter', 'Riverpod', 'GoRouter', 'Feature-First', 'REST APIs'],
     period: 'Feb 2025 - Apr 2025',
-    image: '/images/project-vantage.jpg',
+    image: '/images/project-vantage.png',
   },
   {
     id: 'kinvo',
@@ -218,7 +218,7 @@ export const projects: Project[] = [
     description: 'Date-and-discover app with card-based swipe discovery, real-time chat, video calls, and selectable discovery modes. Built across 31 screens on a Feature-First architecture with Riverpod state management.',
     tech: ['Flutter', 'Riverpod', 'Feature-First', 'Real-Time Chat', 'Video Calls'],
     period: 'Oct 2024 - Feb 2025',
-    image: '/images/project-kinvo.jpg',
+    image: '/images/project-kinvo.png',
   },
   {
     id: 'makeithappen',
@@ -226,7 +226,7 @@ export const projects: Project[] = [
     description: 'Mentorship and event platform spanning 47 screens with multi-step onboarding, event discovery and booking via payment webview, mentorship session scheduling, and lesson-based learning paths. Released on both iOS and Android with REST-backed content and Lottie-driven UI.',
     tech: ['Flutter', 'GetX', 'REST APIs', 'Lottie', 'Payment Webview'],
     period: 'Aug 2024 - Jan 2025',
-    image: '/images/project-makeithappen.jpg',
+    image: '/images/project-makeithappen.png',
   },
 
   // ── Additional Projects ────────────────────────────────────────────────────
@@ -373,14 +373,6 @@ export const projects: Project[] = [
     period: '2023 - 2024',
     image: '/images/project-educationalapp.png',
     figmaUrl: 'https://www.figma.com/design/NyGcFld64xEas1DXHgNorA/Educational-App?node-id=0-1&p=f&t=2iiBJyr5TD6UBK6G-0',
-  },
-  {
-    id: 'florian_realestate',
-    title: 'Florian Real Estate',
-    description: 'Real estate listing UI prototype focused on property browsing and filtering with image-driven listings and slidable interactions. Built with Flutter and GetX as a design-fidelity reference, using cached_network_image and custom dropdown controls.',
-    tech: ['Flutter', 'GetX', 'Cached Network Image', 'UI Prototype'],
-    period: '2023 - 2024',
-    image: '/images/project-florian-realestate.jpg',
   },
 ];
 
