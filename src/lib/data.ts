@@ -197,7 +197,7 @@ export const projects: Project[] = [
     tech: ['Flutter', 'REST APIs', 'Video Lessons', 'Quiz Engine'],
     period: 'May 2025 - Jul 2025',
     company: 'Nexum Technologies',
-    image: '/images/project-amz.jpg',
+    image: '/images/project-amz.png',
     figmaUrl: 'https://www.figma.com/design/6ty8ERmhAsDaYz2ir4tpRB/AMZ-App?node-id=0-1&p=f&t=e3kK9rDaB5fMPryL-0',
   },
   {
@@ -272,8 +272,9 @@ export const projects: Project[] = [
     description: 'Sports session and match scheduling app that lets users host or join local matches. Players create profiles, browse nearby sessions, and manage their created and joined matches. Designed for casual sports communities looking to organise informal games quickly.',
     tech: ['Flutter', 'Firebase', 'GetX', 'Location Services'],
     period: '2023 - 2024',
-    image: '/images/projects/seshbuilder/home.png',
+    image: '/images/project-seshbuilder.png',
     images: [
+      '/images/project-seshbuilder.png',
       '/images/projects/seshbuilder/splash.png',
       '/images/projects/seshbuilder/signin.png',
       '/images/projects/seshbuilder/signup.png',
@@ -349,7 +350,7 @@ export const projects: Project[] = [
     description: 'UI prototype for a noodle-focused food ordering experience with a clean, appetising visual language. Customers browse a curated menu, customise orders, and move through a streamlined checkout flow, with Syncfusion charts visualising menu insights.',
     tech: ['Flutter', 'GetX', 'REST APIs', 'Syncfusion Charts'],
     period: '2023 - 2024',
-    image: '/images/project-onlynoodle.jpg',
+    image: '/images/project-onlynoodle.png',
     figmaUrl: 'https://www.figma.com/design/jnEEnEKAxRzliUOOZqpLBg/Only-Noodle?node-id=1-3&p=f&t=6WqBudJJkEhMMZs7-0',
   },
   {
@@ -358,7 +359,7 @@ export const projects: Project[] = [
     description: 'Social networking app connecting people through shared passions, featuring peer-to-peer video calls via the HMS SDK and real-time chat over Socket.io. Users build interest-based profiles, edit media in-app, and interact through activity feeds and direct messaging.',
     tech: ['Flutter', 'HMS SDK', 'Socket.io', 'Video Calls', 'Media Editing'],
     period: '2023 - 2024',
-    image: '/images/project-passionport.jpg',
+    image: '/images/project-passionport.png',
     figmaUrl: 'https://www.figma.com/design/7NqyGoXTfJlcNmzy1NBA3H/Social-App?node-id=56-2432&p=f&t=rSMNv4ynYwNpoQkD-0',
   },
   {
@@ -376,7 +377,7 @@ export const projects: Project[] = [
     description: 'UI mockup for a retro-inspired travel discovery experience. Showcases destination browsing, curated travel packages, and a booking flow rendered from hardcoded data — designed primarily as a design-fidelity prototype.',
     tech: ['Flutter', 'GetX', 'Google Fonts', 'UI Prototype'],
     period: '2023 - 2024',
-    image: '/images/project-retroflyy.jpg',
+    image: '/images/project-retroflyy.png',
     figmaUrl: 'https://www.figma.com/design/ZCfLV3eragEeI2oPPryr3B/RetroFlyy?node-id=0-1&p=f&t=GSoo3akPkxg1CCVY-0',
   },
   {
@@ -394,7 +395,7 @@ export const projects: Project[] = [
     description: 'Vehicle fleet tracking and management solution for logistics companies with real-time GPS tracking, route optimisation, and trip history. Features on-device OCR for driver document verification via Firebase ML Kit and Google ML Kit, with role-based access for fleet managers, dispatchers, and drivers.',
     tech: ['Flutter', 'Firebase', 'Google Maps', 'ML Kit OCR', 'Role-Based Access'],
     period: '2023 - 2024',
-    image: '/images/project-fleetmgmt.jpg',
+    image: '/images/project-fleetmgmt.png',
     figmaUrl: 'https://www.figma.com/design/C9NgjBIwlOluV0tcPk0Ykf/Fleet-Management-App?node-id=0-1&p=f&t=Jbi7E0t9j7uVPyxK-0',
   },
   {
@@ -403,7 +404,7 @@ export const projects: Project[] = [
     description: 'E-learning platform app with structured courses, video lessons, quizzes, and learner progress tracking. Students can enrol in courses, watch video content, complete module quizzes, and track their learning journey. Instructors can manage course content through an admin interface.',
     tech: ['Flutter', 'Firebase', 'REST APIs', 'Video Streaming', 'E-Learning'],
     period: '2023 - 2024',
-    image: '/images/project-educationalapp.jpg',
+    image: '/images/project-educationalapp.png',
     figmaUrl: 'https://www.figma.com/design/NyGcFld64xEas1DXHgNorA/Educational-App?node-id=0-1&p=f&t=2iiBJyr5TD6UBK6G-0',
   },
   {
