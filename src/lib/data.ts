@@ -331,11 +331,11 @@ export const projects: Project[] = [
   },
   {
     id: 'ussoccer',
-    title: 'USA Soccer League',
-    description: 'Early-stage UI prototype for a USA soccer league management app covering team rosters, match scheduling, and standings. Built with Provider for lightweight state management and focused on screen-flow validation rather than backend integration.',
-    tech: ['Flutter', 'Provider', 'UI Prototype', 'Sports Management'],
+    title: 'Sports App',
+    description: 'Player-centric sports app covering team rosters, match scheduling, and personalised player profiles. Built with Flutter and Provider as a UI-fidelity prototype focused on screen-flow validation and clean player/match interactions.',
+    tech: ['Flutter', 'Provider', 'Player Stats', 'Match Scheduling'],
     period: '2023 - 2024',
-    image: '/images/project-ussoccer.jpg',
+    image: '/images/project-ussoccer.png',
     figmaUrl: 'https://www.figma.com/design/N3NFyQDYdLsmlgGNS4IgIB/edwardb-project?node-id=4-2&p=f&t=lPPpJPiRZimKeHx2-0',
   },
   {
