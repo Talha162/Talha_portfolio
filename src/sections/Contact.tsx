@@ -38,12 +38,16 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 md:py-28 bg-[#f8f9fa]">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative py-20 md:py-28 bg-[#f8f9fa] overflow-hidden">
+      <div className="absolute inset-0 bg-grid-soft opacity-50 pointer-events-none" />
+      <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-12 md:mb-16">
-          <p className="text-[#0d6efd] font-medium mb-2">Get In Touch</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#212529] mb-4">
+          <div className="chip mb-4">
+            <span className="chip-dot" />
+            <span className="chip-label">Get In Touch</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0F172A] mb-4 leading-tight">
             Let's Work Together
           </h2>
           <p className="text-[#6c757d] max-w-2xl mx-auto">

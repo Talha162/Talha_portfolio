@@ -4,12 +4,16 @@ import { skillCategories } from '@/lib/data';
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 md:py-28 bg-[#f8f9fa]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="relative py-20 md:py-28 bg-[#f8f9fa] overflow-hidden">
+      <div className="absolute inset-0 bg-grid-soft opacity-50 pointer-events-none" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-12 md:mb-16">
-          <p className="text-[#0d6efd] font-medium mb-2">My Expertise</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#212529] mb-4">
+          <div className="chip mb-4">
+            <span className="chip-dot" />
+            <span className="chip-label">My Expertise</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0F172A] mb-4 leading-tight">
             Technical Skills
           </h2>
           <p className="text-[#6c757d] max-w-2xl mx-auto">

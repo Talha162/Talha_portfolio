@@ -34,11 +34,15 @@ export function Footer() {
                   e.preventDefault();
                   scrollToSection('#');
                 }}
-                className="text-2xl font-bold bg-gradient-to-r from-[#0d6efd] to-[#6610f2] bg-clip-text text-transparent inline-block mb-4"
+                className="font-display text-2xl font-bold text-white inline-block mb-4"
               >
                 {personalInfo.name}
               </a>
-              <p className="text-gray-400 mb-4">{personalInfo.title}</p>
+              <p className="text-gray-400 mb-3">{personalInfo.title}</p>
+              <p className="text-gray-500 text-xs mb-4 inline-flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                Building apps for iOS · Android · Web
+              </p>
               <SocialLinks variant="dark" />
             </div>
 

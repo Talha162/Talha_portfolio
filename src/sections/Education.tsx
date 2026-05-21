@@ -10,8 +10,11 @@ export function Education() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-12 md:mb-16">
-          <p className="text-[#0d6efd] font-medium mb-2">My Background</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#212529] mb-4">
+          <div className="chip mb-4">
+            <span className="chip-dot" />
+            <span className="chip-label">My Background</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0F172A] mb-4 leading-tight">
             Education
           </h2>
           <p className="text-[#6c757d] max-w-2xl mx-auto">
@@ -33,8 +36,11 @@ export function Education() {
 
         {/* Certifications */}
         <AnimatedSection className="text-center mb-8">
-          <p className="text-[#0d6efd] font-medium mb-2">Credentials</p>
-          <h3 className="text-2xl md:text-3xl font-bold text-[#212529]">
+          <div className="chip mb-4">
+            <span className="chip-dot" />
+            <span className="chip-label">Credentials</span>
+          </div>
+          <h3 className="font-display text-2xl md:text-3xl font-bold text-[#0F172A]">
             Certifications
           </h3>
         </AnimatedSection>

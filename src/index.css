@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -75,6 +77,59 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  /* Subtle dot-grid texture for depth in light sections */
+  .bg-grid {
+    background-image: radial-gradient(circle, rgba(13, 110, 253, 0.12) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  .bg-grid-soft {
+    background-image: radial-gradient(circle, rgba(13, 110, 253, 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Section header pill chip */
+  .chip {
+    @apply inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0d6efd]/10 border border-[#0d6efd]/20;
+  }
+  .chip-dot {
+    @apply w-1.5 h-1.5 rounded-full bg-[#0d6efd];
+  }
+  .chip-label {
+    @apply text-[#0d6efd] text-xs font-semibold uppercase tracking-[0.12em];
+  }
+
+  /* Gradient hairline border for cards on hover */
+  .ring-gradient {
+    position: relative;
+  }
+  .ring-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .ring-gradient:hover::before {
+    opacity: 1;
   }
 }
 

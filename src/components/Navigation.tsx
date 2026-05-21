@@ -46,20 +46,25 @@ export function Navigation() {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#0d6efd] to-[#6610f2] bg-clip-text text-transparent"
+            className="flex items-center gap-2"
           >
-            Talha
+            <span className="relative w-8 h-8 rounded-xl bg-gradient-to-br from-[#0d6efd] to-[#6610f2] flex items-center justify-center text-white font-bold text-sm shadow-md shadow-[#0d6efd]/25">
+              <span className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/25 to-transparent" />
+              <span className="relative font-display">T</span>
+            </span>
+            <span className="font-display text-xl md:text-2xl font-bold text-[#0F172A]">Talha</span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-[#6c757d] hover:text-[#0d6efd] transition-colors text-sm font-medium"
+                className="relative px-3 py-2 text-[#475569] hover:text-[#0d6efd] transition-colors text-sm font-medium group"
               >
                 {link.label}
+                <span className="absolute left-3 right-3 -bottom-0.5 h-0.5 bg-gradient-to-r from-[#0d6efd] to-[#6610f2] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
               </button>
             ))}
           </div>
@@ -68,7 +73,7 @@ export function Navigation() {
           <div className="hidden md:block">
             <Button
               asChild
-              className="bg-gradient-to-r from-[#0d6efd] to-[#6610f2] hover:opacity-90 text-white"
+              className="bg-gradient-to-r from-[#0d6efd] to-[#6610f2] hover:opacity-90 text-white rounded-full shadow-md shadow-[#0d6efd]/20 hover:shadow-lg hover:shadow-[#0d6efd]/25 transition-all"
               size="sm"
             >
               <a href="/Talha_CV.pdf" download="Talha_CV.pdf">

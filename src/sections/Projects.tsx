@@ -23,9 +23,12 @@ export function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-12 md:mb-16">
-          <p className="text-[#0d6efd] font-medium mb-2">My Work</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#212529] mb-4">
-            Projects
+          <div className="chip mb-4">
+            <span className="chip-dot" />
+            <span className="chip-label">My Work</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0F172A] mb-4 leading-tight">
+            Featured Projects
           </h2>
           <p className="text-[#6c757d] max-w-2xl mx-auto">
             A showcase of mobile apps, UI designs, and utility tools built across professional and personal projects. Click any card to view screens or designs.

@@ -10,8 +10,11 @@ export function About() {
           {/* Content */}
           <div>
             <AnimatedSection>
-              <p className="text-[#0d6efd] font-medium mb-2">About Me</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#212529] mb-6">
+              <div className="chip mb-4">
+                <span className="chip-dot" />
+                <span className="chip-label">About Me</span>
+              </div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0F172A] mb-6 leading-tight">
                 Passionate Developer Building
                 <span className="bg-gradient-to-r from-[#0d6efd] to-[#6610f2] bg-clip-text text-transparent">
                   {' '}Digital Solutions
