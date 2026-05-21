@@ -5,7 +5,7 @@ export const personalInfo = {
   title: 'Flutter / Mobile Application Developer',
   email: 'talha.cusit.pk@gmail.com',
   phone: '(+92) 302-5232179',
-  location: 'Peshawar, Pakistan',
+  location: 'Islamabad, Pakistan',
   linkedin: 'https://www.linkedin.com/in/muhammad-talha-42b1ab315/',
   github: 'https://github.com/Talha162',
   summary: 'Flutter / Mobile Application Developer with 3+ years of experience building cross-platform Android and iOS applications. Strong expertise in Flutter, Firebase, Supabase, REST and GraphQL APIs, scalable mobile architecture, and real-time, offline-first, and role-based access systems. Experienced in Google Maps integration, payment workflows, native SDKs, and AI-powered features using OpenAI and Gemini APIs.',
