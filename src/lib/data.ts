@@ -13,7 +13,7 @@ export const personalInfo = {
 
 export const stats: Stat[] = [
   { value: '3', label: 'Years Experience', suffix: '+' },
-  { value: '30', label: 'Projects Completed', suffix: '+' },
+  { value: '23', label: 'Projects Completed', suffix: '+' },
   { value: '8', label: 'Apps Published', suffix: '+' },
   { value: '2', label: 'Companies Worked', suffix: '' },
 ];
@@ -205,30 +205,6 @@ export const projects: Project[] = [
     figmaUrl: 'https://www.figma.com/design/6ty8ERmhAsDaYz2ir4tpRB/AMZ-App?node-id=0-1&p=f&t=e3kK9rDaB5fMPryL-0',
   },
   {
-    id: 'dinetime',
-    title: 'DineTime',
-    description: 'Social dining discovery and reservation platform for Canadian venues. Users discover restaurants with location, cuisine, and atmosphere filters, book tables via Stripe-powered reservations, and chat with venues in real time. Built across 41 screens with Firebase Auth, FCM push notifications, Google Maps, and Socket.io.',
-    tech: ['Flutter', 'GetX', 'Firebase', 'Stripe', 'Socket.io', 'Google Maps'],
-    period: 'Jan 2025 - Jun 2025',
-    image: '/images/project-dinetime.jpg',
-  },
-  {
-    id: 'creditpathway',
-    title: 'Paramount Credit Pathway',
-    description: 'Credit improvement and financial advisory app with a live credit score dashboard, debt tracking, and Syncfusion-powered charts. Users chat with financial advisors, watch video tutorials, and generate PDF credit reports, secured by multi-provider auth (email, phone, Google).',
-    tech: ['Flutter', 'GetX', 'Firebase', 'Syncfusion', 'Google Sign-In', 'PDF Reports'],
-    period: 'Mar 2025 - Aug 2025',
-    image: '/images/project-creditpathway.jpg',
-  },
-  {
-    id: 'twinflame',
-    title: 'Twin Flame',
-    description: 'Dating app built around a flame-based interaction currency with daily question prompts, friend requests, and real-time Socket.io chat. Features OTP authentication, location-based discovery, subscription packages, content moderation, and a Supabase-backed data layer paired with Firebase Auth and FCM.',
-    tech: ['Flutter', 'GetX', 'Firebase', 'Supabase', 'Socket.io', 'Syncfusion'],
-    period: 'Dec 2024 - May 2025',
-    image: '/images/project-twinflame.jpg',
-  },
-  {
     id: 'vantage',
     title: 'VANE',
     description: 'AI-powered social media content creation and scheduling SaaS that coordinates multi-platform posts from a single content calendar. Includes OTP-based auth, post analytics, and a 15-screen MVP scope built with Riverpod and GoRouter on a Feature-First architecture.',
@@ -251,22 +227,6 @@ export const projects: Project[] = [
     tech: ['Flutter', 'GetX', 'REST APIs', 'Lottie', 'Payment Webview'],
     period: 'Aug 2024 - Jan 2025',
     image: '/images/project-makeithappen.jpg',
-  },
-  {
-    id: 'syncmobile',
-    title: 'Sync Mobile',
-    description: 'Enterprise SaaS for business operations with role-based access for Engineers, Managers, and Admins. Covers company directories, appointments and jobs, earnings tracking with Syncfusion and fl_chart, geolocation tracking, and full localization on a production-grade Flutter stack.',
-    tech: ['Flutter', 'GetX', 'REST APIs', 'Syncfusion', 'flutter_map', 'Role-Based Access'],
-    period: 'Jun 2024 - Dec 2024',
-    image: '/images/project-syncmobile.jpg',
-  },
-  {
-    id: 'richardsocial',
-    title: 'Reel Social',
-    description: 'Reel-focused social media app with playback, recording, and in-app video editing via FFmpeg Kit and Media Kit. Features camera capture, threaded comments, direct messages, and profile management, backed by Supabase with Firebase Cloud Messaging for push.',
-    tech: ['Flutter', 'GetX', 'Supabase', 'Firebase', 'FFmpeg Kit', 'Media Kit'],
-    period: 'Apr 2024 - Sep 2024',
-    image: '/images/project-richardsocial.jpg',
   },
 
   // ── Additional Projects ────────────────────────────────────────────────────
@@ -413,22 +373,6 @@ export const projects: Project[] = [
     period: '2023 - 2024',
     image: '/images/project-educationalapp.png',
     figmaUrl: 'https://www.figma.com/design/NyGcFld64xEas1DXHgNorA/Educational-App?node-id=0-1&p=f&t=2iiBJyr5TD6UBK6G-0',
-  },
-  {
-    id: 'sehatyaab',
-    title: 'SehatYaab',
-    description: 'Healthcare and telemedicine app with dual-role auth for doctors and patients, calendar-based appointment booking, and real-time chat consultations. Includes a Gemini-powered AI medical assistant and an admin verification flow, built on Firebase with GetX and Provider in MVVM.',
-    tech: ['Flutter', 'GetX', 'Firebase', 'Gemini AI', 'MVVM', 'Hive'],
-    period: '2023 - 2024',
-    image: '/images/project-sehatyaab.jpg',
-  },
-  {
-    id: 'sehatyaab_admin',
-    title: 'SehatYaab Admin',
-    description: 'Web and desktop admin dashboard companion to SehatYaab, used for doctor verification, appointment management, and reporting. Features a NavigationRail sidebar and a KPI dashboard layout, built with GetX and Firebase Auth + Firestore.',
-    tech: ['Flutter', 'GetX', 'Firebase', 'Admin Dashboard', 'Web & Desktop'],
-    period: '2023 - 2024',
-    image: '/images/project-sehatyaab-admin.jpg',
   },
   {
     id: 'florian_realestate',
