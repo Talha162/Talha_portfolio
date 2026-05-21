@@ -132,7 +132,7 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Profile photo — device-frame motif */}
+          {/* Profile photo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -140,29 +140,8 @@ export function Hero() {
             className="flex-shrink-0"
           >
             <div className="relative">
-              {/* Gradient glow behind */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-[#0d6efd] to-[#6610f2] rounded-[2.5rem] blur-2xl opacity-25" />
-
-              {/* Floating tech badges */}
-              <motion.div
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-3 -left-6 z-20 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white shadow-lg border border-[#e9ecef]"
-              >
-                <span className="w-2 h-2 rounded-full bg-[#02569B]" />
-                <span className="text-xs font-semibold text-[#0F172A]">Flutter</span>
-              </motion.div>
-              <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -bottom-2 -right-4 z-20 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white shadow-lg border border-[#e9ecef]"
-              >
-                <span className="w-2 h-2 rounded-full bg-[#FFA000]" />
-                <span className="text-xs font-semibold text-[#0F172A]">Firebase</span>
-              </motion.div>
-
-              {/* Device-style frame around photo */}
-              <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-[2rem] overflow-hidden border-[6px] border-white shadow-2xl ring-1 ring-[#0d6efd]/15 bg-gradient-to-br from-[#0d6efd]/5 to-[#6610f2]/5">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0d6efd] to-[#6610f2] rounded-full blur-2xl opacity-20 scale-110" />
+              <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-[#0d6efd]/20">
                 <img
                   src="/images/profile.jpeg"
                   alt="Muhammad Talha"
