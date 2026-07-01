@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# Muhammad Talha — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site for Muhammad Talha, Senior Flutter Developer. Built as a
+dark-first, animated, accessible single-page site showcasing experience, skills,
+and 22+ shipped mobile projects.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19 + Vite + TypeScript** (strict mode)
+- **Tailwind CSS 3** with CSS-variable-driven theming (light/dark)
+- **Framer Motion** for scroll reveals, magnetic buttons, tilt cards, typing effect,
+  animated counters/skill bars, and an aurora hero background
+- **lucide-react** for icons
+- Contact form via **Formspree** with a `mailto:` fallback when no form ID is configured
+- Native React 19 document metadata (no `react-helmet`)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Copy `.env.example` to `.env` and set `VITE_FORMSPREE_FORM_ID` to enable the
+Formspree-backed contact form. Without it, the form falls back to opening a
+pre-filled `mailto:` link.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Script            | Description                                   |
+| ------------------ | ---------------------------------------------- |
+| `npm run dev`       | Start the Vite dev server                      |
+| `npm run build`     | Type-check (`tsc -b`) and build for production  |
+| `npm run typecheck` | Type-check only, no emit                        |
+| `npm run lint`      | Run ESLint over the project                     |
+| `npm run preview`   | Preview the production build locally            |
+
+## Project Structure
+
 ```
+src/
+  data/portfolio.ts        # Single source of truth for all site content
+  components/
+    ui/                     # Reusable primitives (Section, Badge, TiltCard, ...)
+    layout/                 # Navbar, Footer, ScrollProgress, ThemeToggle, ...
+    sections/                # One file per page section (Hero, About, Projects, ...)
+  hooks/                    # useTheme, useActiveSection, useTypingEffect, ...
+  lib/                      # Motion variants + small utilities (cn, isValidEmail, ...)
+```
+
+Below-the-fold sections are lazy-loaded via `React.lazy` + `Suspense` for
+smaller initial bundles.
+
+## Content
+
+All CV-derived content (profile, experience, skills, projects, education,
+certifications) lives in `src/data/portfolio.ts`, fully typed. A few sections
+(languages, testimonials) contain clearly marked `"Replace with actual content"`
+placeholders where the source CV had no equivalent data — search that file for
+`placeholder: true` to find and replace them.
+
+## Deployment
+
+Before deploying, replace the placeholder domain (`https://example.com`) in
+`index.html`, `public/robots.txt`, and `public/sitemap.xml` with the real
+production domain.
+
+Build output is emitted to `dist/` and is ready to deploy to any static host
+(Vercel, Netlify, GitHub Pages, etc.).
