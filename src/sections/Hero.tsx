@@ -143,7 +143,7 @@ export function Hero() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#0d6efd] to-[#6610f2] rounded-full blur-2xl opacity-20 scale-110" />
               <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-[#0d6efd]/20">
                 <img
-                  src="/images/profile.jpeg"
+                  src="/images/profile.png"
                   alt="Muhammad Talha"
                   className="w-full h-full object-cover object-top"
                 />
