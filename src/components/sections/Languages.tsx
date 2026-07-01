@@ -21,11 +21,6 @@ export function Languages() {
           {languages.map((lang) => (
             <motion.div key={lang.name} variants={fadeInUp}>
               <SkillBar name={lang.name} level={lang.level} />
-              {lang.placeholder && (
-                <p className="mt-1 text-xs italic text-faint">
-                  Replace with actual content
-                </p>
-              )}
             </motion.div>
           ))}
         </div>

@@ -105,14 +105,6 @@ export interface ServiceItem {
   icon: string;
 }
 
-export interface TestimonialItem {
-  id: string;
-  name: string;
-  role: string;
-  quote: string;
-  placeholder?: boolean;
-}
-
 export const nav: NavLink[] = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
@@ -129,6 +121,16 @@ export const socials: SocialLink[] = [
     url: "https://www.linkedin.com/in/muhammad-talha-42b1ab315/",
     icon: "Linkedin",
   },
+  {
+    label: "Upwork",
+    url: "https://www.upwork.com/freelancers/~01cc31ee0bf4539212",
+    icon: "Briefcase",
+  },
+  {
+    label: "Fiverr",
+    url: "https://www.fiverr.com/s/pdDljXY",
+    icon: "ShoppingBag",
+  },
   { label: "Email", url: "mailto:talha.cusit.pk@gmail.com", icon: "Mail" },
 ];
 
@@ -136,10 +138,9 @@ export const profile: Profile = {
   name: "Muhammad Talha",
   firstName: "Talha",
   titles: [
-    "Senior Flutter Developer",
+    "Flutter Developer & Mobile App Developer",
     "Mobile App Architect",
     "Cross-Platform Engineer",
-    "Mobile App Developer",
   ],
   location: "Islamabad, Pakistan",
   email: "talha.cusit.pk@gmail.com",
@@ -148,7 +149,7 @@ export const profile: Profile = {
   github: "https://github.com/Talha162",
   resumeUrl: "/Talha_CV.pdf",
   summary:
-    "Senior Flutter Developer with 3+ years of experience and 18+ cross-platform Android and iOS apps worked on across food delivery, healthcare, fintech, and construction domains, with multiple apps published on the Play Store and App Store. Specialized in scalable mobile architecture (Clean Architecture, Riverpod/GetX), real-time and offline-first systems, and payment integrations (Stripe, RevenueCat, Easypaisa). Proven track record integrating AI features (OpenAI, Gemini), Google Maps, and native SDKs, with end-to-end ownership from architecture to store release.",
+    "Flutter Developer with 3+ years of experience and 18+ cross-platform Android and iOS apps worked on across food delivery, healthcare, fintech, and construction domains, with multiple apps published on the Play Store and App Store. Specialized in scalable mobile architecture (Clean Architecture, Riverpod/GetX), real-time and offline-first systems, and payment integrations (Stripe, RevenueCat, Easypaisa). Proven track record integrating AI features (OpenAI, Gemini), Google Maps, and native SDKs, with end-to-end ownership from architecture to store release.",
   availability: "Available for new opportunities",
 };
 
@@ -265,7 +266,7 @@ export const skillGroups: SkillGroup[] = [
 export const experiences: Experience[] = [
   {
     id: "infinity",
-    role: "Senior Flutter Developer",
+    role: "Flutter Developer",
     company: "Infinity Softwares Company",
     location: "Islamabad",
     period: "Sep 2025 — Present",
@@ -362,20 +363,25 @@ export const certifications: CertificationItem[] = [
 ];
 
 export const languages: LanguageItem[] = [
-  {
-    name: "English (Replace with actual content)",
-    level: 80,
-    placeholder: true,
-  },
+  { name: "Urdu (Native)", level: 100 },
+  { name: "Pashto (Native / Mother Tongue)", level: 100 },
+  { name: "English (Professional)", level: 85 },
 ];
 
 export const services: ServiceItem[] = [
   {
+    id: "mobile-apps",
+    title: "Mobile Application Development",
+    description:
+      "End-to-end Android and iOS app development — architecture, UI, and store-ready release, for general mobile products as well as Flutter-specific builds.",
+    icon: "Smartphone",
+  },
+  {
     id: "flutter-dev",
     title: "Flutter App Development",
     description:
-      "End-to-end cross-platform Android and iOS app development using Clean Architecture and modern state management.",
-    icon: "Smartphone",
+      "Cross-platform Flutter development using Clean Architecture and modern state management (Riverpod, GetX, Bloc, Provider).",
+    icon: "Code2",
   },
   {
     id: "backend-integration",
@@ -407,23 +413,6 @@ export const services: ServiceItem[] = [
   },
 ];
 
-export const testimonials: TestimonialItem[] = [
-  {
-    id: "placeholder-1",
-    name: "Replace with actual content",
-    role: "Replace with actual content",
-    quote: "Replace with actual content",
-    placeholder: true,
-  },
-  {
-    id: "placeholder-2",
-    name: "Replace with actual content",
-    role: "Replace with actual content",
-    quote: "Replace with actual content",
-    placeholder: true,
-  },
-];
-
 export const projects: Project[] = [
   {
     id: "manifesto",
@@ -434,7 +423,10 @@ export const projects: Project[] = [
     period: "Nov 2025 - Present",
     company: "Infinity Softwares",
     image: "/images/project-manifesto.png",
-    links: { store: "https://play.google.com" },
+    links: {
+      store:
+        "https://play.google.com/store/apps/details?id=com.raitime.manifestomd&pcampaignid=web_share",
+    },
     detail:
       "Notable technical detail: AI-assisted diagnostic summaries are layered on top of a Firebase-backed clinical reference dataset, with RevenueCat managing subscription entitlements across platforms.",
   },
@@ -448,6 +440,7 @@ export const projects: Project[] = [
     company: "Infinity Softwares",
     image: "/images/project-chassis.png",
     links: {
+      store: "https://apps.apple.com/us/app/chassis-doctor/id6752336932",
       figma:
         "https://www.figma.com/design/yV6nTZizB8HmBqFA7g05HI/Motorsport?node-id=0-1&p=f&t=Tc0YSu0BilCdPCFn-0",
     },
@@ -504,6 +497,23 @@ export const projects: Project[] = [
       "Notable technical detail: payout order assignment and Stripe-backed payment tracking are fully separated between admin and member roles, with Cloud Functions driving real-time reminder notifications.",
   },
   {
+    id: "farmer",
+    title: "Greek Farmer Market",
+    description:
+      "Dual-role marketplace connecting Greek consumers with local farm producers, supporting in-app browsing, ordering, and Stripe-powered checkout. Built with GetX and flutter_map for producer discovery, REST APIs for catalogue and orders, and get_storage for lightweight local persistence.",
+    tech: ["Flutter", "GetX", "Stripe", "flutter_map", "REST APIs"],
+    period: "2023 - 2024",
+    image: "/images/project-farmer.png",
+    links: {
+      store:
+        "https://play.google.com/store/apps/details?id=com.greekfarmersmarket.app&pcampaignid=web_share",
+      figma:
+        "https://www.figma.com/design/OXedVCPQzCUEI0GN96DWAt/farmer?node-id=0-1&p=f&t=FDgzXZepIqJSHWIr-0",
+    },
+    detail:
+      "Notable technical detail: flutter_map drives producer discovery for a dual-role (consumer/producer) marketplace, with Stripe handling checkout and get_storage for local persistence.",
+  },
+  {
     id: "cricket",
     title: "Ball-by-Ball Cricket Scoring",
     description:
@@ -550,7 +560,10 @@ export const projects: Project[] = [
       "/images/projects/afghflavor/unnamed (8).webp",
       "/images/projects/afghflavor/unnamed (9).webp",
     ],
-    links: { store: "https://play.google.com" },
+    links: {
+      store:
+        "https://play.google.com/store/apps/details?id=com.afghanflavors.app&pcampaignid=web_share",
+    },
     detail:
       "Notable technical detail: three distinct app flows (customer, rider, restaurant) share a Firebase backend, with Google Maps driving live delivery tracking and route guidance.",
   },
@@ -573,7 +586,7 @@ export const projects: Project[] = [
       "/images/projects/durshalta/300x650bb (5).webp",
       "/images/projects/durshalta/300x650bb (6).webp",
     ],
-    links: { store: "https://apps.apple.com" },
+    links: { store: "https://apps.apple.com/pk/app/durshalta/id6503061159" },
     detail:
       "Notable technical detail: photo-based delivery verification and live location sharing run over the same Google Maps integration used for dual customer/rider order flows.",
   },
@@ -787,21 +800,6 @@ export const projects: Project[] = [
     },
     detail:
       "Notable technical detail: a design-fidelity prototype rendering destination browsing and booking flows from hardcoded data, focused purely on visual polish.",
-  },
-  {
-    id: "farmer",
-    title: "Greek Farmer Market",
-    description:
-      "Dual-role marketplace connecting Greek consumers with local farm producers, supporting in-app browsing, ordering, and Stripe-powered checkout. Built with GetX and flutter_map for producer discovery, REST APIs for catalogue and orders, and get_storage for lightweight local persistence.",
-    tech: ["Flutter", "GetX", "Stripe", "flutter_map", "REST APIs"],
-    period: "2023 - 2024",
-    image: "/images/project-farmer.png",
-    links: {
-      figma:
-        "https://www.figma.com/design/OXedVCPQzCUEI0GN96DWAt/farmer?node-id=0-1&p=f&t=FDgzXZepIqJSHWIr-0",
-    },
-    detail:
-      "Notable technical detail: flutter_map drives producer discovery for a dual-role (consumer/producer) marketplace, with Stripe handling checkout and get_storage for local persistence.",
   },
   {
     id: "fleetmgmt",

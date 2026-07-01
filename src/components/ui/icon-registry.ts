@@ -40,6 +40,7 @@ import {
   Loader2,
   Quote,
   Globe,
+  ShoppingBag,
   type LucideIcon,
 } from "lucide-react";
 
@@ -85,6 +86,7 @@ export const icons: Record<string, LucideIcon> = {
   Loader2,
   Quote,
   Globe,
+  ShoppingBag,
 };
 
 export type IconName = keyof typeof icons;

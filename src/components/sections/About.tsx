@@ -32,7 +32,7 @@ export function About() {
                 width={480}
                 height={480}
                 loading="lazy"
-                className="aspect-square w-full object-cover"
+                className="aspect-square w-full object-cover object-top"
               />
             </div>
           </div>
@@ -99,9 +99,9 @@ export function About() {
               target="_blank"
               rel="noreferrer"
               className="border border-border bg-surface-2 text-content hover:border-brand/50"
-              ariaLabel="Download résumé PDF"
+              ariaLabel="Download resume PDF"
             >
-              Download Résumé
+              Download Resume
               <Icon name="Download" size={16} />
             </MagneticButton>
           </motion.div>

@@ -76,9 +76,9 @@ export function Hero() {
               target="_blank"
               rel="noreferrer"
               className="border border-border bg-surface-2 text-content hover:border-brand/50"
-              ariaLabel="Download résumé PDF"
+              ariaLabel="Download resume PDF"
             >
-              Download Résumé
+              Download Resume
               <Icon name="Download" size={16} />
             </MagneticButton>
           </motion.div>

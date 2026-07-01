@@ -34,11 +34,6 @@ const LanguagesSection = lazy(() =>
 const Services = lazy(() =>
   import("@/components/sections/Services").then((m) => ({ default: m.Services })),
 );
-const Testimonials = lazy(() =>
-  import("@/components/sections/Testimonials").then((m) => ({
-    default: m.Testimonials,
-  })),
-);
 const Contact = lazy(() =>
   import("@/components/sections/Contact").then((m) => ({ default: m.Contact })),
 );
@@ -76,7 +71,6 @@ function App() {
           <Certifications />
           <LanguagesSection />
           <Services />
-          <Testimonials />
           <Contact />
         </Suspense>
       </main>

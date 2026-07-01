@@ -8,10 +8,10 @@ import { profile } from "@/data/portfolio";
 export function SEO() {
   return (
     <>
-      <title>{`${profile.name} — Senior Flutter Developer`}</title>
+      <title>{`${profile.name} — Flutter Developer & Mobile App Developer`}</title>
       <meta
         name="description"
-        content="Senior Flutter Developer with 3+ years of experience building scalable, cross-platform mobile apps across food delivery, healthcare, fintech, and construction domains."
+        content="Flutter Developer & Mobile App Developer with 3+ years of experience building scalable, cross-platform mobile apps across food delivery, healthcare, fintech, and construction domains."
       />
     </>
   );

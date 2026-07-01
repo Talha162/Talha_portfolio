@@ -51,6 +51,7 @@ declare module "lucide-react" {
   export const Sparkle: LucideIcon;
   export const Quote: LucideIcon;
   export const Globe: LucideIcon;
+  export const ShoppingBag: LucideIcon;
 
   const _default: Record<string, LucideIcon>;
   export default _default;
