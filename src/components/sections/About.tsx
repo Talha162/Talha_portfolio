@@ -16,32 +16,7 @@ export function About() {
         description="A closer look at how I work, what I specialise in, and the track record behind it."
       />
 
-      <div className="grid gap-12 lg:grid-cols-[minmax(0,320px)_1fr] lg:items-start">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          variants={fadeInUp}
-          className="relative mx-auto w-full max-w-sm"
-        >
-          <div className="relative rounded-3xl bg-[linear-gradient(135deg,rgb(var(--brand)/0.4),rgb(var(--accent)/0.3))] p-1.5">
-            <div className="overflow-hidden rounded-[22px] bg-surface">
-              <img
-                src="/images/profile.png"
-                alt={`Portrait of ${profile.name}`}
-                width={480}
-                height={480}
-                loading="lazy"
-                className="aspect-square w-full object-cover object-top"
-              />
-            </div>
-          </div>
-          <div
-            aria-hidden="true"
-            className="absolute -inset-6 -z-10 rounded-[32px] bg-[linear-gradient(135deg,rgb(var(--brand)/0.35),rgb(var(--accent)/0.25))] blur-2xl"
-          />
-        </motion.div>
-
+      <div className="mx-auto max-w-3xl">
         <div className="flex flex-col gap-8">
           <motion.p
             initial="hidden"

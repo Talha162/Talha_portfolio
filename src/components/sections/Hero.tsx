@@ -18,7 +18,7 @@ export function Hero() {
     >
       <AuroraBackground />
 
-      <div className="container-px relative z-10 grid gap-12 lg:grid-cols-[1fr_minmax(0,340px)] lg:items-center">
+      <div className="container-px relative z-10 grid gap-12 lg:grid-cols-[1fr_minmax(0,440px)] lg:items-center">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -103,7 +103,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.92, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="relative mx-auto hidden w-full max-w-[320px] sm:block"
+          className="relative mx-auto hidden w-full max-w-[420px] sm:block"
         >
           <div className="relative rounded-3xl bg-[linear-gradient(135deg,rgb(var(--brand)/0.4),rgb(var(--accent)/0.3))] p-1.5">
             <div className="overflow-hidden rounded-[22px] bg-surface">
