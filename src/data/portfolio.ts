@@ -415,6 +415,19 @@ export const services: ServiceItem[] = [
 
 export const projects: Project[] = [
   {
+    id: "guivhouse",
+    title: "GUIVHOUSE",
+    description:
+      "Solidarity and verified-giving platform connecting donors with people who need help. Built the complete Flutter front end from Figma — 106 routed screens covering multi-role onboarding (donor, beneficiary, NGO, field verifier), verified story feeds, Hope Fund and Wheel of Hope collective giving, mutual-aid requests, in-app messaging, subscriptions, and a magazine and podcast content hub.",
+    tech: ["Flutter", "Riverpod", "GoRouter", "Feature-First", "Figma to Flutter"],
+    period: "Jun 2026 - Present",
+    company: "Infinity Softwares",
+    image: "/images/project-guivhouse.png",
+    links: {},
+    detail:
+      "Notable technical detail: 106 GoRouter routes organised feature-first across donor, beneficiary, NGO, and profile modules, with a shared design-token theme layer keeping the whole build pixel-accurate to the Figma source.",
+  },
+  {
     id: "manifesto",
     title: "Manifesto MD",
     description:
